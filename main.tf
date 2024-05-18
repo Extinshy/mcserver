@@ -47,3 +47,7 @@ output "minecraft_server_address" {
   description = "Address of the Minecraft server"
   value       = "${aws_instance.minecraft_instance.public_ip}:${var.minecraft_server_port}"
 }
+output "minecraft_version" {
+  description = "Use this MC version"
+  value       = "1.18.2 Release"
+}
